@@ -6,7 +6,7 @@ using RabbitMQ.Client;
 using Utilities.Contracts;
 using Xunit;
 
-namespace Messaging.Tests
+namespace Messaging.Tests.Producing
 {
     public class MessageProducerTests
     {

@@ -28,8 +28,8 @@ namespace Messaging.Producing
             _channel.BasicPublish(
                 exchange: settings.Exchange,
                 routingKey: settings.RoutingKey,
-                mandatory: true, // Pass these as settings too.
-                basicProperties: null,
+                mandatory: settings.Mandatory,
+                basicProperties: settings.BasicProperties,
                 body: data);
         }
 
