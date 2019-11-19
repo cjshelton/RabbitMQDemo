@@ -38,7 +38,7 @@ namespace Messaging.Tests.Producing
             Settings settings = new Settings(exchange, routingKey, basicProperties);
 
             // Assert
-            Assert.Equal(false, settings.Mandatory);
+            Assert.False(settings.Mandatory);
         }
 
         [Fact]

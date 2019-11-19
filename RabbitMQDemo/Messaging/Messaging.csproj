@@ -11,6 +11,7 @@
     <Folder Include="Contracts\" />
     <Folder Include="Producing\" />
     <Folder Include="Producing\Contracts\" />
+    <Folder Include="Connection\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.csproj" />
