@@ -1,11 +1,11 @@
 ﻿using System;
-using RabbitMQ.Client;
 
 namespace Messaging.Connection
 {
-    public class BasicConnectionFactory : ConnectionFactory
+    public class BasicConnectionFactory : SecureConnectionFactory
     {
-        public BasicConnectionFactory(string hostname, string username, string password)
+        public BasicConnectionFactory(string hostname, string username, string password, SecureConnectionSettings settings)
+            : base(settings)
         {
             HostName = string.IsNullOrWhiteSpace(hostname)
                 ? throw new ArgumentException(nameof(hostname))
