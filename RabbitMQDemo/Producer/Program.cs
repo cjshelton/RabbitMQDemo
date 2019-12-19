@@ -21,7 +21,7 @@ namespace Producer
 
             SecureConnectionSettings connectionSettings = new SecureConnectionSettings(
                 "raspberrypi",
-                "/path/to/client/certiicate.p12",
+                "/path/to/client/certificate.p12",
                 "password");
 
             ExternalAuthConnectionFactory sslAuthConnectionFactory = new ExternalAuthConnectionFactory(
